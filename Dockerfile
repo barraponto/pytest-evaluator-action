@@ -1,6 +1,7 @@
 FROM alpine:3.12.0
 
 RUN apk --update add python3 && \
+    apk add build-base && \
     apk add libxml2-dev && \
     apk add libxslt-dev && \
     apk add py3-pip && \
